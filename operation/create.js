@@ -19,10 +19,10 @@ let listPosts = [
 
 prisma.post.create({
     data: {
-        slug: listPosts[0].slug,
-        image: listPosts[0].image,
-        content: listPosts[0].content,
-        published: listPosts[0].published,
+        slug: listPosts[1].slug,
+        image: listPosts[1].image,
+        content: listPosts[1].content,
+        published: listPosts[1].published,
     },
 }).then((newPost) => {
     console.log("New post: ", newPost);
