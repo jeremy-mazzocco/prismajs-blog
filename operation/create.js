@@ -24,25 +24,25 @@ const listPosts = [
     {
         slug: 'querto-post',
         image: 'url_immagine.png',
-        content: ' loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem.',
+        content: ' ciaociaociaociaociaociaociao.',
         published: false,
     },
     {
         slug: 'quinto-post',
         image: 'url_immagine.png',
-        content: ' loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem.',
+        content: ' ciaociaociaociaociaociaociao.',
         published: false,
     },
     {
         slug: 'sesto-post',
         image: 'url_immagine.png',
-        content: ' loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem.',
+        content: ' ciaociaociaociaociaociaociao.',
         published: true,
     },
     {
         slug: 'settimo-post',
         image: 'url_immagine.png',
-        content: ' loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem.',
+        content: ' ciaociaociaociaociaociaociao.',
         published: true,
     }
 ];
