@@ -1,7 +1,7 @@
 const { PrismaClient } = require("@prisma/client");
 const prisma = new PrismaClient();
 
-let listPosts = [
+const listPosts = [
     {
         slug: 'primo-post',
         image: 'url_immagine.jpg',
@@ -14,6 +14,36 @@ let listPosts = [
         content: ' loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem.',
         published: false,
     },
+    {
+        slug: 'secondo-post',
+        image: 'url_immagine.png',
+        content: ' loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem.',
+        published: false,
+    },
+    {
+        slug: 'secondo-post',
+        image: 'url_immagine.png',
+        content: ' loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem.',
+        published: false,
+    },
+    {
+        slug: 'secondo-post',
+        image: 'url_immagine.png',
+        content: ' loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem.',
+        published: false,
+    },
+    {
+        slug: 'secondo-post',
+        image: 'url_immagine.png',
+        content: ' loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem.',
+        published: false,
+    },
+    {
+        slug: 'secondo-post',
+        image: 'url_immagine.png',
+        content: ' loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem.',
+        published: false,
+    }
 ];
 
 
