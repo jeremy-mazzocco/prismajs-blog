@@ -1,6 +1,7 @@
 const { PrismaClient } = require("@prisma/client");
 const prisma = new PrismaClient();
 
+
 const listPosts = [
     {
         slug: 'primo-post',
@@ -15,38 +16,40 @@ const listPosts = [
         published: false,
     },
     {
-        slug: 'secondo-post',
+        slug: 'terzo-post',
+        image: 'url_immagine.png',
+        content: ' loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem.',
+        published: true,
+    },
+    {
+        slug: 'querto-post',
         image: 'url_immagine.png',
         content: ' loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem.',
         published: false,
     },
     {
-        slug: 'secondo-post',
+        slug: 'quinto-post',
         image: 'url_immagine.png',
         content: ' loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem.',
         published: false,
     },
     {
-        slug: 'secondo-post',
+        slug: 'sesto-post',
         image: 'url_immagine.png',
         content: ' loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem.',
-        published: false,
+        published: true,
     },
     {
-        slug: 'secondo-post',
+        slug: 'settimo-post',
         image: 'url_immagine.png',
         content: ' loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem.',
-        published: false,
-    },
-    {
-        slug: 'secondo-post',
-        image: 'url_immagine.png',
-        content: ' loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem.',
-        published: false,
+        published: true,
     }
 ];
 
 
+
+// Create one post
 prisma.post.create({
     data: {
         slug: listPosts[1].slug,
@@ -57,3 +60,13 @@ prisma.post.create({
 }).then((newPost) => {
     console.log("New post: ", newPost);
 });
+
+
+
+// Create all posts
+// prisma.post.createMany({
+//     data: listPosts,
+//     skipDuplicates: true,
+// }).then((allPosts) => { 
+//     console.log("All posts: ", allPosts)
+// });
